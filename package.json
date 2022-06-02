@@ -3,14 +3,14 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://YuriiBerezan.github.io/goit-js-hw-08",
+  "homepage": "https://yuriiberezan.github.io/goit-js-hw-08",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /goit-js-hw-08/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/YuriiBerezan/goit-js-hw-08"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
