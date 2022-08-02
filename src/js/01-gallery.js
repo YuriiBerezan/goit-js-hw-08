@@ -28,7 +28,7 @@ function createGallerymarkup(el) {
     return el.map(({preview, original, description}) => {
         return `
          <li class="gallery__item"> 
-  <a class="gallery__link" href="${preview}">
+  <a class="gallery__link" href="${original}">
     <img
       class="gallery__image"
       src="${preview}"
@@ -52,7 +52,10 @@ function onOpenModal(evt) {
     evt.preventDefault();   
     
 
-    const captionOptions = {
+    
+    
+}
+const captionOptions = {
     
     
     captionsData: 'alt',
@@ -65,5 +68,3 @@ simpleLightboxGallery.on('show.simplelightbox', function () {
     open// do something…
     });
 
-    
-}
