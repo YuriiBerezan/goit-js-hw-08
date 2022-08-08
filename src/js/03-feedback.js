@@ -43,13 +43,14 @@ function dataFromLocalStorage() {
   // }
   if (email == ' ') {
     email.value = ' ';
-    message.value = data.message;
+    // message.value = data.message;
   }
-  // if (message == ' ') {
-  //   message.value = ' ';
-  //   email.value = data.email;
-  // }
+  if (message == ' ') {
+    message.value = ' ';
+   
+  }
   message.value = data.message;
+  
   // email.value = data.email;
   // if (data.email == undefined) {
   //   email.value = ' ';
