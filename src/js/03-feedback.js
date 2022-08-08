@@ -24,21 +24,27 @@ function onSubmitForm(e) {
 
 function dataFromLocalStorage() {
     // data = '';
-  const data = JSON.parse(localStorage.getItem('feedback-form-state'));
+  let data = JSON.parse(localStorage.getItem('feedback-form-state'));
+
   let email = document.querySelector('.feedback-form input');
-    let message = document.querySelector('.feedback-form textarea');
-  // data = '';
-  // if (data) {
-    if (email != ' ' & message != ' ') {
-      email.value = data.email;
-      message.value = data.message;
-    // }
+
+  // console.log(data)
+  let message = document.querySelector('.feedback-form textarea');
+  // email.value = ' ';
+  console.log (data.email, data.message)
+  // message.value = ' ';
+  if (data.email == undefined) {
+    email.value = ' ';
+    message.value = data.message;
+  // console.log (data.email, data.message)
   }
+  if (data.message == undefined) {
+    message.value = ' ';
+    email.value = data.email;
+  // console.log (data.email, data.message)
+  }
+
   
-  
-    
-     
-    
-    // data = ' ';
+
 
 };
