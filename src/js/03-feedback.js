@@ -24,43 +24,21 @@ function onSubmitForm(e) {
 
 function dataFromLocalStorage() {
     // data = '';
-  let data = JSON.parse(localStorage.getItem('feedback-form-state'));
+  const data = JSON.parse(localStorage.getItem('feedback-form-state'));
 
-  let email = document.querySelector('.feedback-form input');
+  const email = document.querySelector('.feedback-form input');
 
   // console.log(data)
-  let message = document.querySelector('.feedback-form textarea');
-  // email.value = ' ';
-  // console.log (data.email, data.message)
-  // message.value = ' ';
+  const message = document.querySelector('.feedback-form textarea');
+ 
+  if (data.message) {
+    // email.value = data.email;
+    message.value = data.message;
+  }
+  if (data.email)
+  {
+    email.value = data.email;
+    }
 
-  // if (email == ' ') {
-  //   email.value = ' ';
-     
-  // }
-  // if (message == ' ') {
-  //   message.value = ' ';
-  // }
-  if (email == ' ') {
-    email.value = ' ';
-    // message.value = data.message;
-  }
-  if (message == ' ') {
-    message.value = ' ';
-   
-  }
-  message.value = data.message;
-  
-  // email.value = data.email;
-  // if (data.email == undefined) {
-  //   email.value = ' ';
-  //   message.value = data.message;
-  // // console.log (data.email, data.message)
-  // }
-  // if (data.message == undefined) {
-  //   message.value = ' ';
-  //   email.value = data.email;
-  // // console.log (data.email, data.message)
-  // }
 
 };
