@@ -40,5 +40,4 @@ function dataFromLocalStorage() {
     email.value = data.email;
     }
 
-
 };
